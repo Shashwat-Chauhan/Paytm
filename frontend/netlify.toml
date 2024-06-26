@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "/App.jsx"
+to = "/signup"
 status = 200

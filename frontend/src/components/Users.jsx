@@ -9,7 +9,7 @@ function Users() {
   const [users, setUsers] = useState([])
     const navigate = useNavigate();
   useEffect(() => {
-    axios.get("http://localhost:3000/api/v1/user/bulk")
+    axios.get("https://paytm-tau6.onrender.com/api/v1/user/bulk")
         .then(response => {
             setUsers(response.data.user)
         })

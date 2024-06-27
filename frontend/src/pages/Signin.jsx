@@ -20,7 +20,7 @@ function Signin() {
                 <InputBox onchange={e => {setUsername(e.target.value)}} label={"Email"} placeholder={"shashwat@gmail.com"}/>
                 <InputBox onchange={e => {setPassword(e.target.value)}} label={"Password"} placeholder={"123456"}/>
                 <Button onPress={async() => {
-                    const response = await axios.post("https://paytm-tau6.onrender.com/api/v1/user/signin", {
+                    const response = await axios.post("http://localhost:3000/api/v1/user/signin", {
                         username,
                         password
                     });
